@@ -115,14 +115,10 @@
     
     Además, un dato curioso, si te vienes lo suficiente, puedes hacer que tu Vaporeon se vuelva blanco. literalmente construido para la polla humana. Increibles estadisticas de armadura + Un alto HP y Armadura Acida significa que puede aguantar pene todo el día, de todas las formas y tamaños, y aún así venir por más.</p>
     <div class="excel-viewer" id="excelViewer">
-      <iframe
-        src="https://docs.google.com/spreadsheets/d/16sbo7B8YBr5cicPcFnFVeq4c6ey8fmUWQgtkvukkW90/edit?usp=sharing"
-      ></iframe>
-      
+      <iframe src="https://docs.google.com/spreadsheets/d/16sbo7B8YBr5cicPcFnFVeq4c6ey8fmUWQgtkvukkW90/edit?usp=sharing"></iframe>
     </div>
-
+    <div class="barra-blanca2"></div> 
   </div>
-  <div class="barra-blanca"></div>
  <div class="page-container">
 
   <div class="faq-container">
@@ -140,9 +136,11 @@
     <div class="seccion" onclick="toggleRespuesta('seccion3')">¿Cómo adquiero otro boleto?</div>
     <div id="seccion3" class="respuesta">Respuesta a la pregunta 3.</div>
   </div>
-  <div class="barra-blanca"></div>
+
 </div>
+
 <div class="contacto-container">
+  <div class="barra-blanca2"></div> 
   <h2>Contacto</h2>
   <p>Para ponerte en contacto con nosotros, puedes utilizar las siguientes opciones:</p>
   <div class="rectangulo-container">
@@ -160,17 +158,27 @@
       </div>
     </div>
   </div>
+  <div class="barra-blanca2"></div> 
+</div>
 
   <script>
     function toggleRespuesta(id) {
-      var respuesta = document.getElementById(id);
+  var respuesta = document.getElementById(id);
 
-      if (respuesta.style.display === 'block') {
-        respuesta.style.display = 'none';
-      } else {
-        respuesta.style.display = 'block';
-      }
-    }
+  // Usar window.getComputedStyle para obtener el estilo actual (incluidas las reglas de estilo del CSS)
+  var estilo = window.getComputedStyle(respuesta);
+
+  if (estilo.display === 'block' || estilo.display === '') {
+    respuesta.style.display = 'none';
+  } else {
+    respuesta.style.display = 'block';
+  }
+}
   </script>
+   <footer>
+    <div>Esta página web tiene como objetivo</div>
+    <div>Nopixel ES | Código fuente | Discord</div>
+  </footer>
+
 </body>
 </html>
